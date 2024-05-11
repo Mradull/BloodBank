@@ -1,19 +1,21 @@
 package com.android.iunoob.bloodbank.fragments;
 
 import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.iunoob.bloodbank.R;
 import com.android.iunoob.bloodbank.adapters.BloodRequestAdapter;
@@ -26,17 +28,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 
-/***
- Project Name: BloodBank
- Project Date: 10/12/18
- Created by: imshakil
- Email: mhshakil_ice_iu@yahoo.com
- ***/
 
 public class HomeView extends Fragment {
 

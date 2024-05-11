@@ -3,9 +3,10 @@ package com.android.iunoob.bloodbank.fragments;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,12 +31,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-/***
- Project Name: BloodBank
- Project Date: 10/12/18
- Created by: imshakil
- Email: mhshakil_ice_iu@yahoo.com
- ***/
+
 
 public class AchievmentsView extends Fragment {
 

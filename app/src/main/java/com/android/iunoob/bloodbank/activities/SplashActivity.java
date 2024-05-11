@@ -1,9 +1,10 @@
 package com.android.iunoob.bloodbank.activities;
 
-import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
